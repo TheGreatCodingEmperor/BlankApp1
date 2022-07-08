@@ -5,10 +5,11 @@
              Title="{Binding Title}">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Label Text="Welcome to Xamarin Forms and Prism!" />
-        <Entry Text="{Binding MyEntry}"></Entry>
-        <Button Text="OK" Command="{Binding BtnCommand}"></Button>
-        <Label Text="{Binding MyLabel}"></Label>
+        <Label Text="{Binding MyQuestion}}" />
+        <Entry Keyboard="Numeric" Text="{Binding MyAnswer}"></Entry>
+        <Label TextColor="Red" Text="{Binding MyResult}"></Label>
+        <Button Text="送出答案" Command="{Binding SendAnswer}"></Button>
+        <Button Text="重新產生問題" Command="{Binding ReGen}"></Button>
     </StackLayout>
 
 </ContentPage>
